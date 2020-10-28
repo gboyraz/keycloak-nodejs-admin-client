@@ -1,1 +1,1 @@
-require('node-window-polyfill').register();
+require("node-window-polyfill").register();

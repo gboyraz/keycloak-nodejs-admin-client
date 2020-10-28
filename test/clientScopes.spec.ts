@@ -442,7 +442,7 @@ describe('Client Scopes', () => {
           await this.kcAdminClient.clients.del({id});
         } catch (e) {
           // ignore
-          console.log(e);
+          // console.log(e);
         }
       });
 

@@ -14,7 +14,7 @@ declare module 'mocha' {
   }
 }
 
-describe('Roles', function() {
+describe('Roles', function () {
   before(async () => {
     this.client = new KeycloakAdminClient();
     await this.client.auth(credentials);
@@ -111,5 +111,5 @@ describe('Roles', function() {
     });
     expect(users).to.be.ok;
     expect(users).to.be.an('array');
-  })
+  });
 });

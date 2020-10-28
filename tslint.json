@@ -1,6 +1,11 @@
 {
-  "exclude": ["node_modules", "lib"],
-  "extends": ["tslint:latest"],
+  "exclude": [
+    "node_modules",
+    "lib"
+  ],
+  "extends": [
+    "tslint:latest"
+  ],
   "rules": {
     "ordered-imports": [
       true,
@@ -9,9 +14,19 @@
         "named-imports-order": "any"
       }
     ],
-    "semicolon": [true, "always", "strict-bound-class-methods"],
-    "quotemark": [true, "single"],
-    "no-implicit-dependencies": [true, "dev"],
+    "semicolon": [
+      true,
+      "always",
+      "strict-bound-class-methods"
+    ],
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "no-implicit-dependencies": [
+      true,
+      "dev"
+    ],
     "no-submodule-imports": false,
     "object-literal-sort-keys": false,
     "trailing-comma": [
@@ -26,7 +41,17 @@
         "esSpecCompliant": true
       }
     ],
-    "arrow-parens": [true, "ban-single-arg-parens"],
-    "interface-name": [true, "never-prefix"]
+    "arrow-parens": [
+      true,
+      "ban-single-arg-parens"
+    ],
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ]
   }
 }

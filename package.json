@@ -1,5 +1,5 @@
 {
-  "name": "keycloak-admin",
+  "name": "@byiam/keycloak-admin",
   "version": "1.12.0",
   "description": "keycloak admin client",
   "main": "lib/index.js",
@@ -15,7 +15,8 @@
     "coverage": "nyc npm run test",
     "watch": "npm run build -- --watch",
     "watch:test": "npm run test -- --watch",
-    "prepublishOnly": "npm run clean && npm run build"
+    "prepublishOnly": "npm run clean && npm run build",
+    "deploy": "npm run prepublishOnly && npm publish --access public"
   },
   "dependencies": {
     "@types/debug": "^0.0.30",

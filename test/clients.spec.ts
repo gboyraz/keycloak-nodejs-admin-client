@@ -18,7 +18,7 @@ declare module 'mocha' {
   }
 }
 
-describe('Clients', function() {
+describe('Clients', function () {
   before(async () => {
     this.kcAdminClient = new KeycloakAdminClient();
     await this.kcAdminClient.auth(credentials);
@@ -438,7 +438,7 @@ describe('Clients', function() {
         protocol: 'openid-connect',
         protocolMapper: 'oidc-role-name-mapper',
         config: {
-          role: 'admin',
+          'role': 'admin',
           'new.role.name': 'farmer',
         },
       };

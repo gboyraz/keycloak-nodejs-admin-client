@@ -5,7 +5,7 @@ export class ServerInfo extends Resource {
 
   public find = this.makeRequest<{}, ServerInfoRepresentation>({
     method: 'GET',
-    path: '/admin/serverinfo'
+    path: '/admin/serverinfo',
   });
 
 }

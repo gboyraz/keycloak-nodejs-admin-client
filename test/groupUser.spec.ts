@@ -18,7 +18,7 @@ declare module 'mocha' {
   }
 }
 
-describe('Group user integration', function() {
+describe('Group user integration', function () {
   before(async () => {
     const groupName = faker.internet.userName();
     this.kcAdminClient = new KeycloakAdminClient();
@@ -48,7 +48,7 @@ describe('Group user integration', function() {
     });
   });
 
-  it("should list user's group and expect empty", async () => {
+  it('should list user\'s group and expect empty', async () => {
     const groups = await this.kcAdminClient.users.listGroups({
       id: this.currentUser.id,
     });
